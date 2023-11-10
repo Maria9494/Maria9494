@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Controls</h1>
+    <form action="http://www.google.com"><!--or ex./register...where data send-->
+        <input type="text" name="user name">
+        <button>SUBMIT</button> 
+    </form><br>
+
+    <form action="">
+        <input type="text" name="first name" placeholder="first name">
+        <input type="text" name="last name" placeholder="last name">
+        <button>submit</button><br><br>
+    </form>
+
+    <!--labels-->
+    <form action="">
+        <label for="firstname">First name</label><br>
+        <input type="text" name="first name" id="firstname" placeholder="first name"><br>
+        <label for="lastname">Last name</label><br>
+        <input type="text" name="last name" id="lastname" placeholder="last name"><br>
+        <button>submit</button>
+    </form><br><br>
+
+    <!--Other types of inputs-->
+    <form action="">
+        <label for="firstname1">First name</label><br>
+        <input type="text" name="first name" id="firstname1" placeholder="first name"><br>
+        <label for="lastname1">Last name</label><br>
+        <input type="text" name="last name" id="lastname1" placeholder="last name"><br>
+        <button>submit</button><br>
+
+        password
+        <input type="password"><!--password--><br>
+
+        number
+        <input type="number"><!--Number--><br
+        >
+        email
+        <input type="email" required> <!--email--><br>
+
+        <textarea rows="5" rows="33" placeholder="comments">comments</textarea><!--Text Area--><br>
+
+        <input type="range" min="0" max="100" name="volume" step="2"><!--Range--><br>
+
+        <label for="agree_terms">Agree</label>
+        <input type="checkbox" id="agree_terms" name="subscribe"><!--checkbox--><br>
+
+        <label for="pet-select">pet select</label><br>
+        <select name="pets" id="pet-select"><!--Drop-down menu-->
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
+            <option value="horse">horse</option>
+        </select><br>
+
+        <label for="phone">Call me</label><!--Radio (SAME NAME to be linked)-->
+        <input type="radio" id="phone" name="contact" value="phone">
+        <label for="email">Mail me</label>
+        <input type="radio" id="email" name="contact" value="mail">
+
+    </form>
+</body>
+</html>
